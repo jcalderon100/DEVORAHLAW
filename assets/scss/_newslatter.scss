@@ -1,0 +1,43 @@
+.newslatter_content {
+	z-index: 2;
+	top: -200px;
+	width: 100%;
+	max-width: 1170px;
+	position: absolute;
+	background-color: #fff;
+	padding: 75px 80px 65px;
+	border-top: 5px solid $base-color;
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+	.section_title_area {
+		p {
+			padding-left: 40px;
+		}
+	}
+	.newslatter-form  {
+		margin-top: 15px;
+		input {
+			border: none;
+			height: 80px;
+			width: 100%;
+			padding-left: 50px;
+			background-color: #f4f4f4;
+		}
+		.nws-button {
+			top: 0;
+			right: 0;
+			position: absolute;
+			button {
+				border: none;
+				color: #fff;
+				width: 160px;
+				height: 80px;
+				font-weight: 700;
+				background-color: $base-color;
+				@extend%btn_hover;
+				i {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,197 @@
+.pricing_section {
+	padding: 115px 0px 118px;
+	.section_title_area {
+		padding-bottom: 95px;
+	}
+}
+.pricing_plan_content {
+	margin: 0 auto;
+	max-width: 330px;
+	padding: 60px 50px 70px;
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		height: 94%;
+		width: 20px;
+		left: -20px;
+		bottom: 40px;
+		background-color: #f4f0e7;
+	}
+	&:after {
+		right: -20px;
+		left: inherit;
+	}
+	.pricing_icon {
+		line-height: 1;
+		margin-bottom: 35px;
+		i {
+			font-size: 100px;
+			color: $base-color;
+		}
+	}
+	.pricing_price {
+		font-family: $heading;
+		font-weight: 600;
+		color: #343434;
+		line-height: 1;
+		.currency_s {
+			font-size: 18px;
+		}
+		strong {
+			font-size: 60px;
+		}
+		.price_ex {
+			font-size: 30px;
+		}
+		.price_policy {
+			display: block;
+			margin-top: 15px;
+		}
+	}
+	.pricing_text {
+		padding-top: 70px;
+		p {
+			line-height: 1.875;
+		}
+		.pricing_btn {
+			margin-top: 30px;
+			@extend%button_defult;
+			a {
+				font-size: 14px;
+				display: inline-block;
+				border: 2px solid #efefef;
+				padding: 20px 40px 15px 42px;
+				@extend%btn_hover;
+				&:hover {
+					color: #fff;
+					border: 2px solid #343434;
+				}
+			}
+		}
+		&:before {
+			top: 0px;
+			content: ".";
+			font-size: 30px;
+			font-weight: 400;
+			left: 0;
+			right: 28px;
+			position: absolute;
+			pointer-events: none;
+			color: rgba(0, 0, 0, 0);
+			text-shadow: 7px 0 $base-color, 14px 0 $base-color, 21px 0 $base-color, 28px 0 $base-color;
+			transition: text-shadow 0.3s ease 0s, color 0.3s ease 0s;
+		}
+	}
+}
+.popular_plan {
+	z-index: 1;
+	padding-top: 80px;
+	margin-top: -30px;
+	padding-bottom: 80px;
+	background-color: #4d3a11;
+	&:before,
+	&:after {
+		height: 90%;
+	}
+	.pricing_price { 
+		color: #fff;
+	}
+	.pricing_text {
+		color: #fff;
+		&:before {
+			text-shadow: 7px 0 #fff, 14px 0 #fff, 21px 0 #fff, 28px 0 #fff;
+		}
+	}
+	.pricing_icon {
+		i {
+			color: #fff;
+		}
+	}
+	.popular_plan_bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		opacity: .2;
+	}
+}
+/*Pricing Page*/
+/*----------------------------------------------------*/
+.pricing_page_content  {
+	padding: 170px 0px 120px;
+}
+.pricing_page_dark {
+	padding: 118px 0px 120px;
+	background-color:  #343434;
+	.section_title_area {
+		padding: 0px 0px 65px 40px;
+		h2 {
+			color: #fff;
+		}
+	}
+	.pricing_plan_content {
+		background-color: #2b2b2b;
+		padding: 70px 50px 70px;
+		&:before,
+		&:after {
+			background-color: #202020;
+			bottom: 25px;
+			height: 92%;
+		}
+		.pricing_price {
+			color: #fff;
+		}
+		.pricing_text {
+			p {
+				color: #fff;
+			}
+			.pricing_btn a {
+				color: #fff;
+				border: 2px solid $base-color;
+			}
+		}
+	}
+	.pricing_plan_content.popular_plan {
+		background-color: $base-color;
+		margin-top: 0;
+		padding-bottom: 70px;
+		&:before,
+		&:after {
+			background-color: #aa8f57;
+			height: 92%;
+		}
+		.pricing_btn a {
+			color: #343434;
+			background-color: #fff;
+			border: 2px solid #fff;
+			&:hover {
+				border: 2px solid #343434;
+				color: #fff;
+			}
+		}
+	}
+}
+.price_tab_button {
+	height: 80px;
+	width: 210px;
+	line-height: 80px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px;
+	background-color: #2b2b2b;
+	@extend%tab_defult;
+	li {
+		width: 50%;
+	}
+	.nav-link {
+		font-weight: 700;
+		line-height: 2.5;
+		color: $base-color;
+	}
+	.nav-link.active {
+		color: #fff;
+	}
+}

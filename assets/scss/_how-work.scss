@@ -1,0 +1,133 @@
+.how_work_section {
+	padding: 115px 0px 170px;
+	.section_title_area {
+		padding-bottom: 65px;
+	}
+}
+.how_work_img_serial {
+	display: inline-block;
+	.how_work_img {
+		width: 160px;
+		height: 160px;
+		overflow: hidden;
+		border-radius: 100%;
+		&:before {
+			position: absolute;
+			height: 0;
+			width: 0;
+			top: 50%;
+			left: 50%;
+			content: '';
+			padding-top: 0px;
+			background-color: rgba(11, 11, 11, 0.4);
+			text-align: center;
+			border-radius: 100%;
+			opacity: 0;
+			z-index: 3;
+			transition: all 0.5s ease;
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			height: 0;
+			width: 0;
+			top: 50%;
+			left: 50%;
+			z-index: 1;
+			padding-top: 0px;
+			border-radius: 100%;
+			background-color: rgba(11, 11, 11, 0.4);
+			text-align: center;
+			opacity: 0;
+			z-index: 4;
+			transition: all 1.5s ease;
+		}
+	}
+	.how_work_serial {
+		@extend%heading_style;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50px;
+		color: #fff;
+		height: 50px;
+		font-size: 16px;
+		line-height: 50px;
+		z-index: 5;
+		background-color: $base-color;
+		border-bottom-left-radius: 25px;
+	}
+}
+.how_work_box {
+	&:hover {
+		.how_work_img {
+			&:before {
+				opacity: 1;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+			}
+			&:after {
+				opacity: 1;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
+.how_work_text {
+	margin: 0 auto;
+	max-width: 240px;
+	h4 {
+		@extend%heading_style;
+		font-size: 22px;
+		padding: 30px 0px 20px 0px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 1.857;
+	}
+}
+.how_work_btn {
+	@extend%carousel_style;
+	margin-top: 35px;
+	line-height: 52px;
+	border: 4px solid #f3f3f3;
+	a {
+		transition: none;
+	}
+	&:hover {
+		border: 4px solid $base-color;
+	}
+}
+.how_work_content {
+	.col-lg-3 {
+		&:nth-child(2) .how_work_box {
+			transform: translateY(50px);
+		}
+		&:nth-child(3) .how_work_box {
+			transform: translateY(-85px);
+		}
+		&:nth-child(4) .how_work_box {
+			transform: translateY(-165px);
+		}
+
+	}
+	.work_btn {
+		right: 0;
+		bottom: 10px;
+		position: absolute;
+		@extend%button_defult;
+		a {
+			color: #fff;
+			display: inline-block;
+			font-size: 14px; 
+			background-color: $base-color;
+			padding: 20px 38px 20px 40px;
+			@extend%btn_hover;
+		}
+	}
+}

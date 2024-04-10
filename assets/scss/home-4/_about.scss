@@ -1,0 +1,70 @@
+.rx-about-section {
+	padding: 10px 0px 95px;
+}
+.rx-about-award-img {
+	.rx-about-award-text {
+		left: 0;
+		right: 0;
+		bottom: 28px;
+		height: 70px;
+		margin: 0 auto;
+		max-width: 370px;
+		line-height: 70px;
+		padding-left: 30px;
+		position: absolute;
+		background-color: #fff;
+		&:before {
+			top: 5px;
+			left: 5px;
+			content: '';
+			position: absolute;
+			border-top: 15px solid #190200;
+			border-right: 15px solid transparent;
+
+		}
+		span {
+			color: #190200;
+			font-size: 20px;
+			margin-top: 5px;
+			font-weight: 700;
+			font-family: $heading;
+		}
+		i {
+			float: left;
+			margin-top: 15px;
+			font-size: 40px;
+			color: $base-color;
+			margin-right: 10px;
+			animation: icon-bounce 2s ease-out infinite;
+		}
+	}
+}
+.rx-about-text {
+	padding-top: 15px;
+	padding-left: 25px;
+	.rx-about-text-wrap {
+		margin-top: 25px;
+		p {
+			line-height: 1.75;
+			padding-bottom: 15px;
+		}
+		ul {
+			li {
+				color: #000000;
+				font-weight: 500;
+				position: relative;
+				padding-left: 30px;
+				margin-bottom: 10px;
+				&:before {
+					top: 0;
+					left: 0;
+					font-weight: 900;
+					content: '\f00c';
+					color: $base-color;
+					position: absolute;
+					font-family: 'Font Awesome 5 Free';
+				}
+			}
+		}
+	}
+}

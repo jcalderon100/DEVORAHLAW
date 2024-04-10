@@ -1,0 +1,180 @@
+.feature_section {
+	.revenue_feature {
+		width: 50%;
+		z-index: 1;
+		float: left;
+		padding: 128px 135px 122px;
+		background-image: url(../img/feature/rfbg.jpg);
+		.background_overlay {
+			z-index: -1;
+			background-color: rgba(37, 37, 37, .9);
+		}
+	}
+	.revenue_icon {
+		line-height: 1;
+		margin-bottom: 5px;
+		i {
+			font-size: 120px;
+			color: $base-color;
+		}
+	}
+	.revenue_ammount {
+		padding-bottom: 15px;
+		@extend%heading_style;
+		color: #fff;
+		span {
+			font-size: 80px;
+		}
+		strong {
+			font-size: 26px;
+			color: $base-color;
+		}
+	}
+	.revenue_text {
+		color: #fff;
+		font-size: 18px;
+		line-height: 1.667;
+
+	}
+}
+@-webkit-keyframes Rx-width-70 {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 70%;
+	}
+}
+
+@keyframes Rx-width-70 {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 70%;
+	}
+}
+@-webkit-keyframes Rx-width-42 {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 42%;
+	}
+}
+
+@keyframes Rx-width-42 {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 42%;
+	}
+}
+@-webkit-keyframes Rx-width-80 {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 80%;
+	}
+}
+
+@keyframes Rx-width-80 {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 80%;
+	}
+}
+@keyframes Rx-width-91 {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 91%;
+	}
+}
+@-webkit-keyframes Rx-width-91 {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 91%;
+	}
+}
+
+.Rx-width-70 {
+	animation-name: Rx-width-70;
+	animation-fill-mode: forwards;
+}
+.Rx-width-42 {
+	animation-name: Rx-width-42;
+	animation-fill-mode: forwards;
+}
+.Rx-width-80 { 
+	animation-name: Rx-width-80;
+	animation-fill-mode: forwards;
+}
+.Rx-width-91 {
+	animation-name: Rx-width-91;
+	animation-fill-mode: forwards;
+}
+.skill_feature {
+	padding: 90px 0px 70px;
+	width: 50%;
+	float: left;
+	padding-left: 160px;
+	background-color: #343434;
+	.section_title_area {
+		padding-bottom: 45px;
+		h2 {
+			color: #fff;
+		}
+	}
+	.skill_progress {
+		max-width: 580px;
+		@extend%skill_progress;
+
+	}
+}
+.skill_section {
+	overflow: visible;
+	margin-top: 50px;
+	padding: 118px 0px 85px;
+	background-color: #343434;
+	.skill_feature {
+		width: 100%;
+		padding: 0;
+		float: right;
+		max-width: 575px;
+		background-color: transparent;
+	}
+	.skill_left_img {
+		bottom: -85px;
+		left: -100px;
+		z-index: 2;
+		position: absolute;
+		overflow: hidden;
+		.video_btn_border {
+			z-index: -1;
+			width: 50%;
+			height: 40%;
+			top: 40%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			border-radius: 100%;
+			border: 2px solid #6c6c6c;
+		}
+	}
+}

@@ -1,0 +1,247 @@
+.footer_section {
+	padding: 115px 0px 100px;
+	background-image: url(../img/map2.png);
+	.background_overlay {
+		background-color: rgba(51, 51, 51, 0.05);
+	}
+	.footer_widget {
+		padding-left: 40px;
+	}
+	.widget_footer_text {
+		color: #cdcdcd;
+		max-width: 310px;
+		line-height: 1.75;
+	}
+	.widget_title {
+		margin-bottom: 25px;
+	}
+	.footer_app_btn {
+		margin-top: 25px;
+		a {
+			display: inline-block;
+			padding: 20px 40px;
+			color: #ffffff;
+			border: 2px solid #494949;
+			background-color: #343434;
+		}
+	}
+	.practice_list {
+		margin-right: -60px;
+		li {
+			width: 50%;
+			float: left;
+			color: #cdcdcd;
+			margin-bottom: 15px;
+			position: relative;
+			transition: .3s all ease-in-out;
+			&:before {
+				left: 0;
+				top: 10px;
+				content: '';
+				width: 0px;
+				position: absolute;
+				transition: .3s all ease-in-out;
+				border: 1px dashed $base-color;
+			}
+			&:hover {
+				padding-left: 20px;
+				&:before {
+					width: 15px;
+				}
+			}
+
+		}
+	}
+	.latest-blog-widget {
+		.blog-img-content {
+			margin-bottom: 20px;
+		}
+		.blog-img {
+			width: 70px;
+			float: left;
+			height: 56px;
+			margin-right: 20px;
+		}
+		.blog-text {
+			.blog-meta {
+				font-size: 14px;
+				color: #c5c5c5;
+				line-height: 1;
+			}
+			h4 {
+				font-size: 14px;
+				color: #fff;
+				line-height: 1.43;
+				overflow: hidden;
+			}
+		}
+	}
+}
+.footer_copyright {
+	padding: 28px 0px;
+	background-color: #222222;
+	border-bottom: 5px solid $base-color;
+	.footer_social {
+		margin-top: 5px;
+		li {
+			color: #fff;
+			width: 60px;
+			height: 60px;
+			margin-right: 8px;
+			line-height: 60px;
+			text-align: center;
+			border: 2px solid #393939;
+			transition: .3s all ease-in-out;
+			&:hover {
+				color: #fff;
+				background-color: $base-color;
+				border: 2px solid $base-color;
+			}
+		}
+	}
+	.copyright_text {
+		color: #fff;
+		margin-top: 30px;
+		a {
+			font-weight: 700;
+		}
+	}
+}
+.footer_section_2 {
+	overflow: visible;
+	margin-top: 200px;
+	padding-top: 165px;
+	overflow-x: initial;
+	.background_overlay {
+		background-color: #343434;
+	}
+	.background_waterprint {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -50px;
+		h2 {
+			// @extend%heading_style;
+			font-size: 300px;
+			color: rgba(255, 255, 255, 0.02);
+		}
+	}
+	&:before {
+		top: -85px;
+		position: absolute;
+		left: 0;
+		content: '';
+		width: 103%;
+		z-index: -1;
+		height: 300px;
+		transform: rotate(-5deg);
+		background-color: #343434;
+	}
+}
+.footer_section_3,
+.footer_section_4 {
+	background-image: url(../img/map.png);
+	.background_overlay {
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+	.widget_title,
+	.widget_footer_text,
+	.practice_list li,
+	.latest-blog-widget .blog-text h4,
+	.latest-blog-widget .blog-text .blog-meta  {
+		color: #343434;
+	}
+	.latest-blog-widget .blog-text .blog-meta {
+		i {
+			color: $base-color;
+		}
+	}
+	.practice_list li:hover {
+		color: $base-color;
+		a {
+			transition: none;
+		}
+	}
+}
+.copyright_3 {
+	background-color: #f5f5f5;
+	.footer_social li {
+		background-color: #fff;
+		border-color: #fff;
+		color: #343434;
+		a {
+			transition: none;
+		}
+	}
+	.copyright_text {
+		color: #343434;
+	}
+}
+.scrollup {
+	width: 45px;
+	right: 15px;
+	z-index: 5;
+	height: 45px;
+	display: none;
+	bottom: 20px;
+	position: fixed;
+	line-height: 45px;
+	background-color: $base-color;
+	i {
+		color: #fff;
+	}
+}
+/*Footer style 4 area*/
+/*---------------------*/
+.footer_section_4 {
+	background-image: none;
+	overflow: hidden;
+	.widget_title {
+		color: #000;
+		font-size: 30px;
+		font-weight: 700;
+		position: relative;
+		display: inline-block;
+		&:after {
+			top: 18px;
+			width: 42px;
+			height: 3px;
+			content: ''; 
+			right: -55px;
+			position: absolute;
+			background-color: $base-color;
+		}
+	}
+	.latest-blog-widget .blog-text h4 {
+		color: #555555;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.footer_app_btn a {
+		padding: 0;
+		border: none;
+		background-color: #000;
+		@extend%rx-btn;
+		width: 278px;
+		&:before {
+			border: 2px solid #000;
+		}
+		&:after {
+			background-color: $base-color;
+		}
+		&:hover {
+			&:before {
+				border: 2px solid $base-color;
+			}
+		}
+	}
+	.practice_list li:hover {
+		a {
+			color: #000;
+			font-weight: 700;
+		}
+	}
+	.practice_list li::before {
+		border: 1px dashed #000;
+	}
+}

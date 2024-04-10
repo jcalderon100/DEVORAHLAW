@@ -1,0 +1,95 @@
+.portfolio_section {
+	.background_parallax {
+		z-index: 1;
+		padding: 118px 0px;
+		padding-left: 19.5%;
+		background-image: url(../img/background/port1.jpg);
+		.background_overlay {
+			background-color: rgba(52, 52, 52, .85);
+			z-index: -1;
+		}
+	}
+	.section_title_area {
+		padding-bottom: 70px;
+		h2 {
+			color: #fff;
+		}
+		p {
+			padding-left: 40px;
+		}
+	}
+}
+.portfolio_slide {
+	.owl-nav {
+		top: -145px;
+		right: 24%;
+		position: absolute;
+		.owl-next,
+		.owl-prev {
+			@extend%carousel_style;
+			color: #fff;
+			margin-left: 20px;
+			border: 2px solid #585756;
+			&:hover {
+				border: 2px solid $base-color;
+			}
+		}
+	}
+}
+.portfolio_img_text {
+	.portfolio_img {
+		position: relative;
+		overflow: hidden;
+		&:before {
+			position: absolute;
+			content: '';
+			background-color: #000;
+			opacity: .6;
+			top: 0;
+			bottom: auto;
+			left: 0;
+			height: 0%;
+			width: 100%;
+			z-index: 1;
+			transition: .5s all ease-in-out;
+		}
+	}
+	.portfolio_text {
+		background-color: #fff;
+		padding: 28px 30px;
+		span {
+			font-size: 14px;
+			font-weight: 700;
+			color: $base-color;
+			letter-spacing: 3px;
+		}
+		h3 {
+			@extend%heading_style;
+		}
+		.port_icon {
+			top: -30px;
+			right: 50px;
+			width: 60px;
+			color: #fff;
+			height: 60px;
+			line-height: 60px;
+			position: absolute;
+			z-index: 2;
+			opacity: 0;
+			background-color: $base-color;
+			transition: .5s all ease-in-out;
+		}
+	}
+	&:hover {
+		.port_icon {
+			right: 30px;
+			opacity: 1;
+			transition-delay: .3s;
+		}
+		.portfolio_img {
+			&:before {
+				height: 100%;
+			}
+		}
+	}
+}

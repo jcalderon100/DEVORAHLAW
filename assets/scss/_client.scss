@@ -1,0 +1,38 @@
+.client_list {
+	border-bottom: 2px solid #efefef;
+	li {
+		width: 20%;
+		float: left;
+		padding: 110px 0px;
+		text-align: center;
+		border-right: 2px solid #efefef;
+		transition: .3s all ease-in-out;
+		&:last-child {
+			border-right: none;
+		}
+		img {
+			 filter: grayscale(100%);
+			 transition: .3s all ease-in-out;
+		}
+		&:hover {
+			img {
+				 filter: grayscale(0);
+			}
+			background-color: #f8f8f8;
+		}
+	}
+}
+.client_section_three {
+	border-top: 2px solid #efefef;
+	.client_list li {
+		border-right: none;
+	}
+	.line_animation {
+		&:before {
+			display: none;
+		}
+		.line_area:before {
+			display: none;
+		}
+	}
+}

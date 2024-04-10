@@ -1,0 +1,83 @@
+/*=========
+Font load
+===========*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:100,300,400,500,700&display=swap');
+
+$body-font: 'Roboto';
+$heading: 'Poppins';
+
+/*=========
+Color Code
+===========*/
+$body-color: #343434;
+$base-color: #c6ac82;
+%rx-btn {
+  z-index: 1;
+  height: 55px;
+  width: 170px;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 55px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  &:before {
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .3s all ease-in-out;
+}
+&:after {
+  top: 0;
+  left: 0;
+  content: '';
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease-in-out;
+}
+&:hover {
+  &:before {
+    top: -10px;
+    left: -10px;
+  }
+  &:after {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+}
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

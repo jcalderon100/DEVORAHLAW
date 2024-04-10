@@ -1,0 +1,12 @@
+.achivement_section {
+  padding: 118px 0px;
+  background-color: #222222; }
+
+.achivement_text {
+  padding: 50px 0 0 45px; }
+  .achivement_text .section_title_area {
+    padding-bottom: 50px; }
+    .achivement_text .section_title_area h2 {
+      color: #fff; }
+  .achivement_text .achivement_img_list li {
+    margin-right: 25px; }

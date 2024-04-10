@@ -1,0 +1,77 @@
+.rx-practice-section {
+	padding: 90px 0px 100px;
+	background-color: #f9f9f9;
+	.rx-section-title {
+		margin: 0 auto;
+		max-width: 580px;
+	}
+	.rx-practice-content {
+		padding-top: 85px;
+	}
+}
+.rx-practice-btn {
+	a {
+		color: #fff;
+		margin: 0 auto;
+		@extend%rx-btn;
+		background-color: #000000;
+		&:before {
+			border: 2px solid #000;
+		}
+		&:after {
+			background-color: $base-color
+		}
+		&:hover {
+			&:before {
+				border: 2px solid $base-color;
+			}
+		}
+	}
+}
+.rx-practice-icon-text {
+	padding: 40px;
+	margin-bottom: 40px;
+	background-color: #fff;
+	transition: .3s all ease-in-out;
+	box-shadow: 0px 0px 32px 0px rgba(73, 73, 73, 0.06);
+	.rx-practice-text {
+		h3 {
+			color: #000000;
+			font-size: 24px;
+			font-weight: 700;
+			max-width: 210px;
+			line-height: 1.25;
+			padding-bottom: 22px;
+		}
+		p {
+			color: #555555;
+			line-height: 1.75;
+		}
+	}
+	.rx-practice-icon {
+		top: 30px;
+		right: 30px;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background-color: $base-color;
+		transition: .6s cubic-bezier(.24,.74,.58,1);
+		transition-delay: .3s;
+		i {
+			color: #fff;
+			font-size: 40px;
+		}
+	}
+	&:hover {
+		box-shadow: 0px 14px 32px 0px rgba(73, 73, 73, 0.27);
+		.rx-practice-text {
+			h3 {
+				color: $base-color;
+			}
+		}
+		.rx-practice-icon {
+			background-color: #000;
+			transform: rotateY(360deg);
+		}
+	}
+}

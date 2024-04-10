@@ -1,0 +1,137 @@
+.slider_content_wrap {
+	z-index: 5;
+	.background_overlay {
+		z-index: 1;
+		background-color: rgba(0, 0, 0, .6);
+	}
+	.rx_slider_img {
+		top: 0;
+		left: 0;
+		z-index: -2;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+	.rx_slider_text {
+		color: #fff;
+		max-width: 735px;
+		padding-left: 75px;
+		span {
+			opacity: 0;
+			font-weight: 700;
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			transform: translateY(50px);
+			&:after {
+				top: 10px;
+				right: -80px;
+				content: '';
+				height: 2px;
+				width: 70px;
+				position: absolute;
+				background-color: $base-color;
+			}
+		}
+		h1 {
+			font-size: 60px;
+			font-weight: 700;
+			line-height: 1.2;
+			padding: 25px 0px 30px;
+			opacity: 0;
+			transform: translateY(50px);
+		}
+		p {
+			font-size: 18px;
+			padding-bottom: 55px;
+			opacity: 0;
+			transform: translateY(50px);
+		}
+		a {
+			@extend%rx-btn;
+			background-color: $base-color;
+			&:before {
+				border: 2px solid $base-color;
+			}
+			opacity: 0;
+			transform: translateY(50px);
+		}
+	}
+	.rx_slider_text_img_area {
+		z-index: 2;
+		padding: 260px 0px 215px;
+		.rx_slider_side_img {
+			right: -40px;
+			bottom: -30px;
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			transform: translateX(50px);
+		}
+	}
+}
+.slider_style_four {
+	.owl-nav {
+		.owl-next,
+		.owl-prev {
+			top: 50%;
+			width: 55px;
+			height: 55px;
+			line-height: 55px;
+			position: absolute;
+			text-align: center;
+			border-radius: 100%;
+			background-color: #fff;
+			transform: translateY(-50%);
+			transition: .3s all ease-in-out;
+			&:hover {
+				color: #fff;
+				background-color: $base-color;
+			}
+		}
+		.owl-prev {
+			left: 55px;
+		}
+		.owl-next {
+			right: 55px;
+		}
+	}
+	.owl-item.active { 
+		.img-zooming {
+			transform: scale(1.15);
+			transition: all 7000ms linear;
+		}
+		.rx_slider_text {
+			span {
+				opacity: 1;
+				transform: translateY(0);
+				transition: all 1500ms ease;
+				transition-delay: 900ms;
+			}
+			h1 {
+				opacity: 1;
+				transform: translateY(0);
+				transition: all 1500ms ease;
+				transition-delay: 1200ms;
+			}
+			p {
+				opacity: 1;
+				transform: translateY(0);
+				transition: all 1500ms ease;
+				transition-delay: 1500ms;
+			}
+			a {
+				opacity: 1;
+				transform: translateY(0);
+				transition: all 1500ms ease;
+				transition-delay: 1800ms;
+			}
+		}
+		.rx_slider_side_img {
+			opacity: 1;
+			transform: translateY(0);
+			transition: all 1500ms ease;
+			transition-delay: 2100ms;
+		}
+	}
+}

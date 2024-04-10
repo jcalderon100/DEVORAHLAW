@@ -1,0 +1,39 @@
+.rx-counter-section {
+	.background_parallax {
+		padding: 95px 0px 110px;
+	}
+	.background_overlay {
+		z-index: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+.rx-counter-icon-text {
+	.rx-counter-icon {
+		margin-right: 20px;
+		i {
+			font-size: 50px;
+			color: $base-color;
+		}
+	}
+	.rx-counter-text {
+		color: #fff;
+		display: block;
+		overflow: hidden;
+		span {
+			line-height: 1;
+			font-size: 50px;
+			font-weight: 700;
+			display: inline-block;
+			font-family: $heading;
+		}
+		p {
+			font-size: 20px;
+			font-weight: 700;
+			padding-top: 8px;
+		}
+		.odometer-formatting-mark {
+			display: none;
+		}
+	}
+	
+}

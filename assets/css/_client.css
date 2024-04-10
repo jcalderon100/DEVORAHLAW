@@ -1,0 +1,24 @@
+.client_list {
+  border-bottom: 2px solid #efefef; }
+  .client_list li {
+    width: 20%;
+    float: left;
+    padding: 110px 0px;
+    text-align: center;
+    border-right: 2px solid #efefef;
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out; }
+    .client_list li:last-child {
+      border-right: none; }
+    .client_list li img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-transition: .3s all ease-in-out;
+      -o-transition: .3s all ease-in-out;
+      transition: .3s all ease-in-out; }
+    .client_list li:hover {
+      background-color: #f8f8f8; }
+      .client_list li:hover img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0); }
