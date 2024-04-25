@@ -21,12 +21,12 @@ if ( $userName && $senderEmail && $userSubject && $message) {
   $success = mail( $recipient, $headers, $msgBody );
 
   //Set Location After Successsfull Submission
-  header('Location: contact.html?message=Successfull');
+  header('Location:index.html');
 }
 
 else{
 	//Set Location After Unsuccesssfull Submission
-  	header('Location: contact.html?message=Failed');	
+  	header('Location:index.html');	
 }
 
 ?>
