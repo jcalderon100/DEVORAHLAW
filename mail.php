@@ -10,11 +10,10 @@ $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el" . date('d/m/Y', time());
 
 $to = 'julio.calderon.100@gmail.com'
-$subject = 'Este fue enviado desde la web'
 
-mail($to, $subject, utf8_decode($mensaje), $header);
+mail($to, utf8_decode($mensaje), $header);
 
-header('Location:send.html');
+header('Location:https://deborahko.com/');
 
 
 
